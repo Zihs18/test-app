@@ -279,7 +279,9 @@ nav a:is(:hover, :focus) {
 #footer h4 {
   color: #0295a9;
 }
-
+.main{
+  background-color: red;
+}
 @keyframes slide-fwd-top {
   0% {
     -webkit-transform: translateZ(0) translateY(0);
