@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Luckiest+Guy&family=Unbounded:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  width: 65%;
+  border-radius: 200px;
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 10px;
+  transition: all ease 0.3s;
+}
+
+nav a:is(:hover, :focus) {
+  color: #fdd037;
+}
+
+.main {
+  margin: auto;
+}
+
+.main h2 {
+  font-size: 52px;
+  width: 100%;
+  color: #151515;
+  text-align: center;
+  /* font-family: 'Unbounded', cursive; */
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 2px;
+  /* background-color: red; */
+}
+
+.main h4 {
+  opacity: 0.5;
+  color: #151515;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  transition: all ease 0.3s;
+}
+
+.main h4:hover {
+  opacity: 1;
+}
+
+.main h2 span {
+  color: #12adc1;
+}
+
+.main p {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 65%;
+  margin: 50px auto;
+  justify-self: center;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#questions {
+  height: 70vh;
+  background: url(/public/thebackground-v2.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* overflow-y: hidden;
+ overflow-x: scroll;
+ white-space: nowrap; */
+}
+
+.quest {
+  width: 400px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.763);
+  border-radius: 10px;
+  margin: 70px 20px;
+  padding: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  backdrop-filter: blur(5px);
+  /* overflow: hidden; */
+  transition: 0.5s ease-in-out;
+}
+
+.quest h2 {
+  padding: 25px 15px 10px;
+  text-align: center;
+  color: #0295a9;
+  /* white-space:break-spaces; */
+}
+
+.quest p {
+  /* padding: 5px 0px; */
+  text-align: center;
+  font-weight: 500;
+  height: 0px;
+  /* width: 100%; */
+  /* overflow: hidden; */
+  /* background-color: rgb(84, 58, 58); */
+  white-space: break-spaces;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.quest:hover>p {
+  /* display: inline; */
+  height: auto;
+  /* transition: 0.3s ease; */
+  animation: slide-p 1s ease forwards;
+
+
+}
+
+.quest:hover {
+  /* margin-bottom: 60px; */
+  transform: scale(1.05);
+}
+
+#cards {
+  height: 55vh;
+  background-color: #0295a9;
+}
+
+.sub {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #fff;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.content h4 {
+  width: 190px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: 2px solid #12adc1;
+  color: #fff;
+  margin: 5px;
+  text-align: center;
+  transition: .3s ease;
+}
+
+.content:hover> :not(:hover) {
+  opacity: .4;
+}
+
+#github {
+  height: 100vh;
+  background: url(/public/thebackground-v2.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#github h2:nth-child(1) {
+  padding: 20px 0px;
+  text-align: center;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.columns {
+  width: 100%;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.763);
+  background-color: #151515e0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  backdrop-filter: blur(10px);
+  display: flex;
+}
+
+.col {
+  width: 50%;
+  padding: 15px 20px;
+
+}
+
+.col h4 {
+  margin-top: 20px;
+}
+
+.col p {
+  width: 90%;
+  margin: 5px 0px;
+
+}
+
+.code {
+  /* background-color: #151515; */
+  width: 45%;
+  padding: 20px 40px;
+  border-left: #12adc1 2px solid;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.code ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.code ol li {
+  margin: 4px 0px;
+}
+
+.code ul li {
+  margin: 0px;
+}
+
+.code ul {
+  margin: 0px 20px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+#footer h2 {
+  color: #151515;
+}
+
+#footer h4 {
+  color: #0295a9;
+}
+
+@keyframes slide-fwd-top {
+  0% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateZ(50px) translateY(-30px);
+    transform: translateZ(50px) translateY(-30px);
+  }
+}
+
+@keyframes slide-p {
+  0% {
+    height: 0;
+  }
+
+  50% {
+    height: 110%;
+  }
+
+  100% {
+    height: auto;
+  }
+}
